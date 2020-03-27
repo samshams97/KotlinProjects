@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
             intent.action = Intent.ACTION_SEND
             intent.putExtra(Intent.EXTRA_TEXT,"this is my text")
             intent.type = "text/plain"
-            startActivity(Intent.createChooser(intent,"share to"))
+            startActivity(Intent.createChooser(intent,"share to zzz"))
 
         }
 
