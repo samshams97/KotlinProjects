@@ -17,14 +17,19 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this,SecondActivity::class.java)
             intent.putExtra("Key",message)
             startActivity(intent)
+
         }
         btnImpicit.setOnClickListener {
             val intent = Intent()
             intent.action = Intent.ACTION_SEND
             intent.putExtra(Intent.EXTRA_TEXT,"this is my text")
             intent.type = "text/plain"
-            startActivity(Intent.createChooser(intent,"share to zzz"))
+            startActivity(Intent.createChooser(intent,"share to sam shams scom"))
 
+        }
+        recyclerDemo.setOnClickListener {
+            val intentRecycler = Intent(this,RecyclerActivity::class.java)
+            startActivity(intentRecycler)
         }
 
         }

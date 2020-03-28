@@ -31,4 +31,14 @@
         android:layout_gravity="center_horizontal"
         android:layout_margin="12dp"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerDemo"
+        android:background="#4B01FFCC"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="8dp"
+        android:text="Recycler"
+        android:textSize="12sp"/>
+
 </LinearLayout>
