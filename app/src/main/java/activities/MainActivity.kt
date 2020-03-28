@@ -1,10 +1,9 @@
-package com.example.kotlinprojects
+package activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.widget.Toast
+import com.example.kotlinprojects.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -14,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         btnSave.setOnClickListener {
             val message : String = edtInput.text.toString()
-            val intent = Intent(this,SecondActivity::class.java)
+            val intent = Intent(this, SecondActivity::class.java)
             intent.putExtra("Key",message)
             startActivity(intent)
 
@@ -28,7 +27,8 @@ class MainActivity : AppCompatActivity() {
 
         }
         recyclerDemo.setOnClickListener {
-            val intentRecycler = Intent(this,RecyclerActivity::class.java)
+            val intentRecycler = Intent(this,
+                RecyclerActivity::class.java)
             startActivity(intentRecycler)
         }
 

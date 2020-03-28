@@ -1,15 +1,17 @@
-package com.example.kotlinprojects
+package adapters
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.appcompat.view.menu.ActionMenuItemView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.kotlinprojects.R
+import modelCalsses.hobby
 
 class AdapterCalss (val hobbieList : ArrayList<hobby>) :
     RecyclerView.Adapter<AdapterCalss.TestViewHolder>() {
+    //classs adapter(val listClass : ArrayList<>()):Rec
 
     class TestViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView){
         val textTitle = itemView.findViewById(R.id.txvTitle) as TextView
