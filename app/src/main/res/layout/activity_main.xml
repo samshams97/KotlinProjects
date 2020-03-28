@@ -7,38 +7,38 @@
     android:orientation="vertical"
     tools:context="activities.MainActivity">
 
-   <EditText
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-      android:id="@+id/edtInput"
-      android:inputType="text"
-      android:layout_margin="12dp"
-      android:hint="please enter your text"/>
+    <EditText
+        android:id="@+id/edtInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:hint="please enter your text"
+        android:inputType="text" />
 
-   <Button
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="save"
-       android:id="@+id/btnSave"
-       android:layout_gravity="center"
-       />
     <Button
+        android:id="@+id/btnSave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="implicit"
+        android:layout_gravity="center"
+        android:text="save" />
+
+    <Button
         android:id="@+id/btnImpicit"
-        android:background="#FFFDF1"
-        android:layout_gravity="center_horizontal"
-        android:layout_margin="12dp"/>
-
-    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="12dp"
+        android:background="#FFFDF1"
+        android:text="implicit" />
+
+    <Button
         android:id="@+id/recyclerDemo"
-        android:background="#4B01FFCC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_margin="8dp"
+        android:background="#4B01FFCC"
         android:text="Recycler"
-        android:textSize="12sp"/>
+        android:textSize="12sp" />
 
 </LinearLayout>

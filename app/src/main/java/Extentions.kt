@@ -1,0 +1,13 @@
+import android.content.Context
+import android.widget.Toast
+
+fun Context.showToast(message : String,duration : Int = Toast.LENGTH_SHORT){
+    Toast.makeText(this,message,duration).show()
+
+    testDefaultParameter()
+    testDefaultParameter(5)
+}
+fun testDefaultParameter(a : Int = 2 ){
+
+}
+

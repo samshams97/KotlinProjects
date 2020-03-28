@@ -8,10 +8,9 @@
     tools:context="activities.SecondActivity">
 
     <TextView
+        android:id="@+id/comingData"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/comingData"
-        android:textSize="12sp"
-        />
+        android:textSize="12sp" />
 
 </LinearLayout>

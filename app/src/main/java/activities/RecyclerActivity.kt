@@ -15,8 +15,6 @@ class RecyclerActivity : AppCompatActivity() {
         setContentView(R.layout.activity_recycler)
 
         setUpRecycler()
-
-
     }
 
     private fun setUpRecycler() {
